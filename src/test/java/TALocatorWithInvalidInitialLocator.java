@@ -1,5 +1,4 @@
 import org.openqa.selenium.By;
-import org.openqa.selenium.NoSuchElementException;
 import org.testng.annotations.Test;
 
 import static io.trueautomation.client.TrueAutomationHelper.ta;

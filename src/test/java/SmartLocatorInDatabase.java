@@ -10,6 +10,7 @@ public class SmartLocatorInDatabase extends BaseTest {
     public void smartInDatabaseTest() {
         driver.get("https://accounts.google.com");
 
+        //This locator is made on another page
         By withTALocator = byTa("Translate:Rus1");
         String expectedError = "NOT_FOUND";
         checkErrorMessage(withTALocator, expectedError);
