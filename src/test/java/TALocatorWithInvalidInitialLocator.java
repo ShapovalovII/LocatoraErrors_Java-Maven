@@ -11,7 +11,7 @@ public class TALocatorWithInvalidInitialLocator extends BaseTest {
 
         //Missing two slashes "//"
         By withTALocator = By.xpath(ta("taName", "span[@class='RveJvd snByac']"));
-        String expectedError = "Unable to locate element { using: \"xpath\", selector: \"span[@class='RveJvd snByac']\" }";
+        String expectedError = "Unable to locate element { using: \'xpath\', selector: \'span[@class='RveJvd snByac']\' }";
         checkErrorMessage(withTALocator, expectedError);
     }
 
@@ -21,7 +21,7 @@ public class TALocatorWithInvalidInitialLocator extends BaseTest {
 
         //Missing dot "."
         By withTALocator = By.cssSelector(ta("taName", ".RveJvd snByac"));
-        String expectedError = "Unable to locate element { using: \"css selector\", selector: \".RveJvd snByac\" }";
+        String expectedError = "Unable to locate element { using: \'css selector\', selector: \'.RveJvd snByac\' }";
         checkErrorMessage(withTALocator, expectedError);
     }
 
@@ -31,7 +31,7 @@ public class TALocatorWithInvalidInitialLocator extends BaseTest {
 
         //The extra two slashes "//"
         By withTALocator = By.className(ta("taName", "//RveJvd snByac"));
-        String expectedError = "Unable to locate element { using: \"class name\", selector: \"//RveJvd snByac\" }";
+        String expectedError = "Unable to locate element { using: \'class name\', selector: \'//RveJvd snByac\' }";
         checkErrorMessage(withTALocator, expectedError);
     }
 
@@ -41,7 +41,7 @@ public class TALocatorWithInvalidInitialLocator extends BaseTest {
 
         //The extra two slashes "//"
         By withTALocator = By.id(ta("taName", "//identifierId"));
-        String expectedError = "Unable to locate element { using: \"id\", selector: \"//identifierId\" }";
+        String expectedError = "Unable to locate element { using: \'id\', selector: \'//identifierId\' }";
         checkErrorMessage(withTALocator, expectedError);
     }
 
@@ -51,7 +51,7 @@ public class TALocatorWithInvalidInitialLocator extends BaseTest {
 
         //The extra two slashes "//"
         By withTALocator = By.name(ta("taName", "//identifier"));
-        String expectedError = "Unable to locate element { using: \"name\", selector: \"//identifier\" }";
+        String expectedError = "Unable to locate element { using: \'name\', selector: \'//identifier\' }";
         checkErrorMessage(withTALocator, expectedError);
     }
 
@@ -61,7 +61,7 @@ public class TALocatorWithInvalidInitialLocator extends BaseTest {
 
         //The extra two slashes "//"
         By withTALocator = By.linkText(ta("taName", "//Справка"));
-        String expectedError = "Unable to locate element { using: \"link text\", selector: \"//Справка\" }";
+        String expectedError = "Unable to locate element { using: \'link text\', selector: \'//Справка\' }";
         checkErrorMessage(withTALocator, expectedError);
     }
 
@@ -71,7 +71,7 @@ public class TALocatorWithInvalidInitialLocator extends BaseTest {
 
         //The extra two slashes "//"
         By withTALocator = By.partialLinkText(ta("taName", "//Справка"));
-        String expectedError = "Unable to locate element { using: \"partial link text\", selector: \"//Справка\" }";
+        String expectedError = "Unable to locate element { using: \'partial link text\', selector: \'//Справка\' }";
         checkErrorMessage(withTALocator, expectedError);
     }
 
